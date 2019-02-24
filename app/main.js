@@ -5,6 +5,8 @@ let mainWindow = null;
 app.on("ready", () => {
   mainWindow = new BrowserWindow({ show: false });
 
+  mainWindow.setMenuBarVisibility(false);
+
   mainWindow.loadURL(`${__dirname}/index.html`);
 
   mainWindow.once("ready-to-show", () => {
