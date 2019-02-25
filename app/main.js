@@ -5,6 +5,7 @@ let mainWindow = null;
 app.on("ready", () => {
   mainWindow = new BrowserWindow({
     show: false,
+    frame: false,
     webPreferences: {
       nodeIntegration: true
     }

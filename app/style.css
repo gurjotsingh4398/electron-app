@@ -39,8 +39,14 @@ button {
 }
 
 .controls {
+  -webkit-app-region: drag;
+  -webkit-user-select: none;
   background-color: rgb(217, 241, 238);
   padding: 10px 10px 10px 10px;
+}
+
+.controls button {
+  -webkit-app-region: no-drag;
 }
 
 button {
@@ -60,6 +66,11 @@ button:active {
 
 button:disabled {
   background-color: rgb(196, 204, 202);
+}
+
+#close-btn:hover {
+  background-color: red;
+  color: white;
 }
 
 .container {
